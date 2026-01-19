@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 7.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha256-VHqXKFhhMxcpubYf9xiWdCiojEbY9NexQ4jh8AxbvcM=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"www.niaohan.top","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.24.1","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js" defer></script>
+
+    <meta name="description" content="安装fio测速工具 123456789101112131415161718192021222324252627282930313233apt install fioReading package lists... DoneBuilding dependency treeReading state information... DoneThe following additional package">
+<meta property="og:type" content="article">
+<meta property="og:title" content="安装fio测速工具">
+<meta property="og:url" content="https://www.niaohan.top/2023/04/04/%E5%AE%89%E8%A3%85fio%E6%B5%8B%E9%80%9F%E5%B7%A5%E5%85%B7/index.html">
+<meta property="og:site_name" content="鸟憨之家">
+<meta property="og:description" content="安装fio测速工具 123456789101112131415161718192021222324252627282930313233apt install fioReading package lists... DoneBuilding dependency treeReading state information... DoneThe following additional package">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2023-04-04T12:37:04.716Z">
+<meta property="article:modified_time" content="2023-04-04T12:37:04.716Z">
+<meta property="article:author" content="灰原键">
+<meta property="article:tag" content="fio">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://www.niaohan.top/2023/04/04/%E5%AE%89%E8%A3%85fio%E6%B5%8B%E9%80%9F%E5%B7%A5%E5%85%B7/">
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://www.niaohan.top/2023/04/04/%E5%AE%89%E8%A3%85fio%E6%B5%8B%E9%80%9F%E5%B7%A5%E5%85%B7/","path":"2023/04/04/安装fio测速工具/","title":"安装fio测速工具"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>安装fio测速工具 | 鸟憨之家</title>
+  
+
+
+
+
+
+
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous" defer></script>
+<script src="/js/utils.js" defer></script><script src="/js/motion.js" defer></script><script src="/js/sidebar.js" defer></script><script src="/js/next-boot.js" defer></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.5.0/search.js" integrity="sha256-xFC6PJ82SL9b3WkGjFavNiA9gm5z6UBxWPiu4CYjptg=" crossorigin="anonymous" defer></script>
+<script src="/js/third-party/search/local-search.js" defer></script>
+
+
+
+
+
+
+
+  
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<link rel="alternate" href="/atom.xml" title="鸟憨之家" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+<div id="xf-MusicPlayer" data-cdnName="https://music.huiyuan.cn.eu.org" data-themeColor="xf-sky" data-songList="14189826720"data-fadeOutAutoplay data-memory="1"></div>
+<script src="https://music.huiyuan.cn.eu.org/xf-MusicPlayer/js/xf-MusicPlayer.min.js"></script>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">鸟憨之家</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+      <div class="search-header">
+        <span class="search-icon">
+          <i class="fa fa-search"></i>
+        </span>
+        <div class="search-input-container">
+          <input autocomplete="off" autocapitalize="off" maxlength="80"
+                placeholder="搜索..." spellcheck="false"
+                type="search" class="search-input">
+        </div>
+        <span class="popup-btn-close" role="button">
+          <i class="fa fa-times-circle"></i>
+        </span>
+      </div>
+      <div class="search-result-container">
+        <div class="search-result-icon">
+          <i class="fa fa-spinner fa-pulse fa-5x"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-overview-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="灰原键"
+      src="/images/avatar.png#/images/avatar.gif">
+  <p class="site-author-name" itemprop="name">灰原键</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/haibara-jian" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;haibara-jian" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:haibara98@qq.com" title="E-Mail → mailto:haibara98@qq.com" rel="noopener me" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://weibo.com/u/3093174885" title="Weibo → https:&#x2F;&#x2F;weibo.com&#x2F;u&#x2F;3093174885" rel="noopener me" target="_blank"><i class="fab fa-weibo fa-fw"></i>Weibo</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.niaohan.top/atom.xml" title="RSS → https:&#x2F;&#x2F;www.niaohan.top&#x2F;atom.xml" rel="noopener me"><i class="fa fa-rss fa-fw"></i>RSS</a>
+      </span>
+  </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="sidebar-inner sidebar-blogroll">
+      <div class="links-of-blogroll animated">
+        <div class="links-of-blogroll-title">
+          链接
+        </div>
+        <ul class="links-of-blogroll-list">
+            <li class="links-of-blogroll-item">
+              <a href="https://tab.niaohan.top/" title="https:&#x2F;&#x2F;tab.niaohan.top" rel="noopener" target="_blank">导航页</a>
+            </li>
+        </ul>
+      </div>
+    </div>
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://www.niaohan.top/2023/04/04/%E5%AE%89%E8%A3%85fio%E6%B5%8B%E9%80%9F%E5%B7%A5%E5%85%B7/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png#/images/avatar.gif">
+      <meta itemprop="name" content="灰原键">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="鸟憨之家">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="安装fio测速工具 | 鸟憨之家">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          安装fio测速工具
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2023-04-04 20:37:04" itemprop="dateCreated datePublished" datetime="2023-04-04T20:37:04+08:00">2023-04-04</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/code/" itemprop="url" rel="index"><span itemprop="name">code</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><p>安装fio测速工具</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">apt install fio</span><br><span class="line">Reading package lists... Done</span><br><span class="line">Building dependency tree</span><br><span class="line">Reading state information... Done</span><br><span class="line">The following additional packages will be installed:</span><br><span class="line">  librbd1 librdmacm1</span><br><span class="line">Suggested packages:</span><br><span class="line">  gnuplot gfio python-scipy</span><br><span class="line">The following NEW packages will be installed:</span><br><span class="line">  fio librbd1 librdmacm1</span><br><span class="line">0 upgraded, 3 newly installed, 0 to remove and 11 not upgraded.</span><br><span class="line">Need to get 1,446 kB of archives.</span><br><span class="line">After this operation, 5,276 kB of additional disk space will be used.</span><br><span class="line">Do you want to continue? [Y/n] y</span><br><span class="line">Get:1 http://192.168.88.11/ubuntu bionic-updates/main amd64 librbd1 amd64 12.2.13-0ubuntu0.18.04.10 [923 kB]</span><br><span class="line">Get:2 http://192.168.88.11/ubuntu bionic-updates/main amd64 librdmacm1 amd64 17.1-1ubuntu0.2 [56.1 kB]</span><br><span class="line">Get:3 http://192.168.88.11/ubuntu bionic/universe amd64 fio amd64 3.1-1 [467 kB]</span><br><span class="line">Fetched 1,446 kB in 1s (2,113 kB/s)</span><br><span class="line">Selecting previously unselected package librbd1.</span><br><span class="line">(Reading database ... 71561 files and directories currently installed.)</span><br><span class="line">Preparing to unpack .../librbd1_12.2.13-0ubuntu0.18.04.10_amd64.deb ...</span><br><span class="line">Unpacking librbd1 (12.2.13-0ubuntu0.18.04.10) ...</span><br><span class="line">Selecting previously unselected package librdmacm1:amd64.</span><br><span class="line">Preparing to unpack .../librdmacm1_17.1-1ubuntu0.2_amd64.deb ...</span><br><span class="line">Unpacking librdmacm1:amd64 (17.1-1ubuntu0.2) ...</span><br><span class="line">Selecting previously unselected package fio.</span><br><span class="line">Preparing to unpack .../archives/fio_3.1-1_amd64.deb ...</span><br><span class="line">Unpacking fio (3.1-1) ...</span><br><span class="line">Setting up librbd1 (12.2.13-0ubuntu0.18.04.10) ...</span><br><span class="line">Setting up librdmacm1:amd64 (17.1-1ubuntu0.2) ...</span><br><span class="line">Setting up fio (3.1-1) ...</span><br><span class="line">Processing triggers for libc-bin (2.27-3ubuntu1.6) ...</span><br><span class="line">Processing triggers for man-db (2.8.3-2ubuntu0.1) ...</span><br></pre></td></tr></table></figure>
+
+<p>用storcli等阵列卡工具设置阵列</p>
+<p>目前为2*240g ssd作为系统盘，组raid1</p>
+<p>目前为2*480g ssd作为缓存盘，组raid1</p>
+<p>目前为9*8t hdd作为系统盘，组raid6</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br></pre></td><td class="code"><pre><span class="line">Scheduled Tasks :</span><br><span class="line">===============</span><br><span class="line">Consistency Check Reoccurrence = 168 hrs</span><br><span class="line">Next Consistency check launch = 07/02/2022, 03:00:00</span><br><span class="line">Patrol Read Reoccurrence = 168 hrs</span><br><span class="line">Next Patrol Read launch = 07/02/2022, 03:00:00</span><br><span class="line">Battery learn Reoccurrence = 670 hrs</span><br><span class="line">Next Battery Learn = 07/28/2022, 04:00:00</span><br><span class="line">OEMID = Broadcom</span><br><span class="line"></span><br><span class="line">Drive Groups = 3</span><br><span class="line"></span><br><span class="line">TOPOLOGY :</span><br><span class="line">========</span><br><span class="line"></span><br><span class="line">-----------------------------------------------------------------------------</span><br><span class="line">DG Arr Row EID:Slot DID Type  State BT       Size PDC  PI SED DS3  FSpace TR</span><br><span class="line">-----------------------------------------------------------------------------</span><br><span class="line"> 0 -   -   -        -   RAID1 Optl  N  223.000 GB dflt N  N   dflt N      N</span><br><span class="line"> 0 0   -   -        -   RAID1 Optl  N  223.000 GB dflt N  N   dflt N      N</span><br><span class="line"> 0 0   0   65:12    16  DRIVE Onln  N  223.062 GB dflt N  N   dflt -      N</span><br><span class="line"> 0 0   1   65:13    17  DRIVE Onln  N  223.062 GB dflt N  N   dflt -      N</span><br><span class="line"> 1 -   -   -        -   RAID6 Optl  Y   50.937 TB dflt N  N   dflt N      N</span><br><span class="line"> 1 0   -   -        -   RAID6 Optl  Y   50.937 TB dflt N  N   dflt N      N</span><br><span class="line"> 1 0   0   65:0     8   DRIVE Onln  N    7.276 TB dflt N  N   dflt -      N</span><br><span class="line"> 1 0   1   65:1     11  DRIVE Onln  N    7.276 TB dflt N  N   dflt -      N</span><br><span class="line"> 1 0   2   65:2     6   DRIVE Onln  N    7.276 TB dflt N  N   dflt -      N</span><br><span class="line"> 1 0   3   65:3     14  DRIVE Onln  N    7.276 TB dflt N  N   dflt -      N</span><br><span class="line"> 1 0   4   65:4     7   DRIVE Onln  N    7.276 TB dflt N  N   dflt -      N</span><br><span class="line"> 1 0   5   65:5     4   DRIVE Onln  N    7.276 TB dflt N  N   dflt -      N</span><br><span class="line"> 1 0   6   65:6     10  DRIVE Onln  N    7.276 TB dflt N  N   dflt -      N</span><br><span class="line"> 1 0   7   65:7     5   DRIVE Onln  N    7.276 TB dflt N  N   dflt -      N</span><br><span class="line"> 1 0   8   65:8     12  DRIVE Onln  N    7.276 TB dflt N  N   dflt -      N</span><br><span class="line"> 2 -   -   -        -   RAID1 Optl  N  446.625 GB dflt N  N   dflt N      N</span><br><span class="line"> 2 0   -   -        -   RAID1 Optl  N  446.625 GB dflt N  N   dflt N      N</span><br><span class="line"> 2 0   0   65:9     3   DRIVE Onln  N  446.625 GB dflt N  N   dflt -      N</span><br><span class="line"> 2 0   1   65:10    2   DRIVE Onln  N  446.625 GB dflt N  N   dflt -      N</span><br><span class="line">-----------------------------------------------------------------------------</span><br><span class="line"></span><br><span class="line">DG=Disk Group Index|Arr=Array Index|Row=Row Index|EID=Enclosure Device ID</span><br><span class="line">DID=Device ID|Type=Drive Type|Onln=Online|Rbld=Rebuild|Optl=Optimal|Dgrd=Degraded</span><br><span class="line">Pdgd=Partially degraded|Offln=Offline|BT=Background Task Active</span><br><span class="line">PDC=PD Cache|PI=Protection Info|SED=Self Encrypting Drive|Frgn=Foreign</span><br><span class="line">DS3=Dimmer Switch 3|dflt=Default|Msng=Missing|FSpace=Free Space Present</span><br><span class="line">TR=Transport Ready</span><br><span class="line"></span><br><span class="line">Virtual Drives = 3</span><br><span class="line"></span><br><span class="line">VD LIST :</span><br><span class="line">=======</span><br><span class="line"></span><br><span class="line">----------------------------------------------------------------</span><br><span class="line">DG/VD TYPE  State Access Consist Cache Cac sCC       Size Name</span><br><span class="line">----------------------------------------------------------------</span><br><span class="line">0/239 RAID1 Optl  RW     No      RWBD  -   ON  223.000 GB raid1</span><br><span class="line">1/0   RAID6 Optl  RW     No      RWBD  -   ON   50.937 TB raid6</span><br><span class="line">2/1   RAID1 Optl  RW     No      RWBD  -   ON  446.625 GB raid1</span><br><span class="line">----------------------------------------------------------------</span><br><span class="line"></span><br><span class="line">VD=Virtual Drive| DG=Drive Group|Rec=Recovery</span><br><span class="line">Cac=CacheCade|OfLn=OffLine|Pdgd=Partially Degraded|Dgrd=Degraded</span><br><span class="line">Optl=Optimal||dflt=Default|RO=Read Only|RW=Read Write|HD=Hidden|TRANS=TransportReady|B=Blocked|</span><br><span class="line">Consist=Consistent|R=Read Ahead Always|NR=No Read Ahead|WB=WriteBack|</span><br><span class="line">AWB=Always WriteBack|WT=WriteThrough|C=Cached IO|D=Direct IO|sCC=Scheduled</span><br><span class="line">Check Consistency</span><br><span class="line"></span><br><span class="line">Physical Drives = 13</span><br><span class="line"></span><br><span class="line">PD LIST :</span><br><span class="line">=======</span><br><span class="line"></span><br><span class="line">----------------------------------------------------------------------------------------</span><br><span class="line">EID:Slt DID State DG       Size Intf Med SED PI SeSz Model                      Sp Type</span><br><span class="line">----------------------------------------------------------------------------------------</span><br><span class="line">65:0      8 Onln   1   7.276 TB SATA HDD N   N  512B HUS728T8TALE600            U  -</span><br><span class="line">65:1     11 Onln   1   7.276 TB SATA HDD N   N  512B HUS728T8TALE600            U  -</span><br><span class="line">65:2      6 Onln   1   7.276 TB SATA HDD N   N  512B HUS728T8TALE600            U  -</span><br><span class="line">65:3     14 Onln   1   7.276 TB SATA HDD N   N  512B HUS728T8TALE600            U  -</span><br><span class="line">65:4      7 Onln   1   7.276 TB SATA HDD N   N  512B HUS728T8TALE600            U  -</span><br><span class="line">65:5      4 Onln   1   7.276 TB SATA HDD N   N  512B HUS728T8TALE600            U  -</span><br><span class="line">65:6     10 Onln   1   7.276 TB SATA HDD N   N  512B HUS728T8TALE600            U  -</span><br><span class="line">65:7      5 Onln   1   7.276 TB SATA HDD N   N  512B HUS728T8TALE600            U  -</span><br><span class="line">65:8     12 Onln   1   7.276 TB SATA HDD N   N  512B HUS728T8TALE600            U  -</span><br><span class="line">65:9      3 Onln   2 446.625 GB SATA SSD N   N  512B INTEL SSDSC2KB480G8        U  -</span><br><span class="line">65:10     2 Onln   2 446.625 GB SATA SSD N   N  512B INTEL SSDSC2KB480G8        U  -</span><br><span class="line">65:12    16 Onln   0 223.062 GB SATA SSD N   N  512B SAMSUNG MZ7LH240HAHQ-00005 U  -</span><br><span class="line">65:13    17 Onln   0 223.062 GB SATA SSD N   N  512B SAMSUNG MZ7LH240HAHQ-00005 U  -</span><br><span class="line">----------------------------------------------------------------------------------------</span><br><span class="line"></span><br><span class="line">EID=Enclosure Device ID|Slt=Slot No.|DID=Device ID|DG=DriveGroup</span><br><span class="line">DHS=Dedicated Hot Spare|UGood=Unconfigured Good|GHS=Global Hotspare</span><br><span class="line">UBad=Unconfigured Bad|Sntze=Sanitize|Onln=Online|Offln=Offline|Intf=Interface</span><br><span class="line">Med=Media Type|SED=Self Encryptive Drive|PI=Protection Info</span><br><span class="line">SeSz=Sector Size|Sp=Spun|U=Up|D=Down|T=Transition|F=Foreign</span><br><span class="line">UGUnsp=UGood Unsupported|UGShld=UGood shielded|HSPShld=Hotspare shielded</span><br><span class="line">CFShld=Configured shielded|Cpybck=CopyBack|CBShld=Copyback Shielded</span><br><span class="line">UBUnsp=UBad Unsupported|Rbld=Rebuild</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<p>初始化数据阵列和缓存阵列，</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">parted -s /dev/sdb mklabel gpt</span><br><span class="line">parted -s /dev/sdb mkpart primary 0% 100%</span><br><span class="line">parted -s /dev/sdb quit</span><br><span class="line">pvcreate /dev/sdb1</span><br><span class="line">parted -s /dev/sdc mklabel gpt</span><br><span class="line">parted -s /dev/sdc mkpart primary 0% 100%</span><br><span class="line">parted -s /dev/sdc quit</span><br><span class="line">pvcreate /dev/sdc1</span><br></pre></td></tr></table></figure>
+
+<p>新建数据vg，通过命令查看vg大小，创建lv,格式化为xfs,设置开机自挂载,创建对应目录，挂载</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">vgcreate infokistvg /dev/sdc1</span><br><span class="line">vgdisplay infokistvg | grep &quot;Total PE&quot; | awk &#x27;&#123;print $3&#125;&#x27;</span><br><span class="line">lvcreate --name infokistlv -l $vgsize infokistvg</span><br><span class="line">mkfs -t xfs /dev/infokistvg/infokistlv</span><br><span class="line">echo &quot;/dev/infokistvg/infokistlv  /infokist           xfs     noatime         0       2&quot; &gt;&gt; /etc/fstab</span><br><span class="line">mkdir /infokist</span><br><span class="line">mount -a</span><br></pre></td></tr></table></figure>
+
+<p>未加速硬盘分区情况</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">lsblk</span><br><span class="line">NAME                      MAJ:MIN RM   SIZE RO TYPE MOUNTPOINT</span><br><span class="line">sda                         8:0    0 222.6G  0 disk</span><br><span class="line">├─sda1                      8:1    0   487M  0 part /boot</span><br><span class="line">├─sda2                      8:2    0     1K  0 part</span><br><span class="line">└─sda5                      8:5    0 222.1G  0 part</span><br><span class="line">  ├─systemvg-swaplv       253:0    0  15.3G  0 lvm  [SWAP]</span><br><span class="line">  └─systemvg-rootlv       253:1    0  30.5G  0 lvm  /</span><br><span class="line">sdb                         8:16   0 446.1G  0 disk</span><br><span class="line">└─sdb1                      8:17   0 446.1G  0 part</span><br><span class="line">sdc                         8:32   0    51T  0 disk</span><br><span class="line">└─sdc1                      8:33   0    51T  0 part</span><br><span class="line">  └─infokistvg-infokistlv 253:2    0    51T  0 lvm  /infokist</span><br></pre></td></tr></table></figure>
+
+
+
+<p>顺序读取速度</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">hdparm -Tt /dev/infokistvg/infokistlv</span><br><span class="line"></span><br><span class="line">/dev/infokistvg/infokistlv:</span><br><span class="line"> Timing cached reads:   17052 MB in  2.00 seconds = 8535.06 MB/sec</span><br><span class="line"> Timing buffered disk reads: 1228 MB in  3.01 seconds = 407.90 MB/sec</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<p>把缓存盘添加到vg中</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">vgextend infokistvg /dev/sdb1</span><br><span class="line">  Volume group &quot;infokistvg&quot; successfully extended</span><br></pre></td></tr></table></figure>
+
+<p>查看剩余空间，最好取整数预留空间给meta。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">vgdisplay infokistvg | grep &quot;Free  PE&quot; | awk &#x27;&#123;print $3&#125;&#x27;</span><br><span class="line">  --- Volume group ---</span><br><span class="line">  VG Name               infokistvg</span><br><span class="line">  System ID</span><br><span class="line">  Format                lvm2</span><br><span class="line">  Metadata Areas        2</span><br><span class="line">  Metadata Sequence No  6</span><br><span class="line">  VG Access             read/write</span><br><span class="line">  VG Status             resizable</span><br><span class="line">  MAX LV                0</span><br><span class="line">  Cur LV                1</span><br><span class="line">  Open LV               0</span><br><span class="line">  Max PV                0</span><br><span class="line">  Cur PV                2</span><br><span class="line">  Act PV                2</span><br><span class="line">  VG Size               51.37 TiB</span><br><span class="line">  PE Size               4.00 MiB</span><br><span class="line">  Total PE              13467309</span><br><span class="line">  Alloc PE / Size       13353108 / &lt;50.94 TiB</span><br><span class="line">  Free  PE / Size       114201 / &lt;446.10 GiB</span><br><span class="line">  VG UUID               9aXPMO-LOIu-80aD-jeqI-pCt6-g93h-ufkXdY</span><br><span class="line"></span><br><span class="line">取114000</span><br><span class="line">lvcreate --name cachelv -l $vgsize infokistvg</span><br><span class="line">  Logical volume &quot;cachelv&quot; created.</span><br><span class="line"></span><br><span class="line">lvconvert --type cache --cachepool /dev/infokistvg/cachelv --cachemode writeback /dev/infokistvg/infokistlv</span><br><span class="line">  Using 480.00 KiB chunk size instead of default 64.00 KiB, so cache pool has less then 1000000 chunks.</span><br><span class="line">  WARNING: Converting infokistvg/cachelv to cache pool&#x27;s data volume with metadata wiping.</span><br><span class="line">  THIS WILL DESTROY CONTENT OF LOGICAL VOLUME (filesystem etc.)</span><br><span class="line">Do you really want to convert infokistvg/cachelv? [y/n]: y</span><br><span class="line">  Converted infokistvg/cachelv to cache pool.</span><br><span class="line">  Logical volume infokistvg/infokistlv is now cached.</span><br></pre></td></tr></table></figure>
+
+<p>安装工具，否则会出现重启后无法挂载vg</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">apt install thin-provisioning-tools</span><br><span class="line">Reading package lists... Done</span><br><span class="line">Building dependency tree</span><br><span class="line">Reading state information... Done</span><br><span class="line">The following NEW packages will be installed:</span><br><span class="line">  thin-provisioning-tools</span><br><span class="line">0 upgraded, 1 newly installed, 0 to remove and 1 not upgraded.</span><br><span class="line">Need to get 359 kB of archives.</span><br><span class="line">After this operation, 1,352 kB of additional disk space will be used.</span><br><span class="line">Get:1 http://192.168.88.11/ubuntu bionic/universe amd64 thin-provisioning-tools amd64 0.7.4-2ubuntu3 [359 kB]</span><br><span class="line">Fetched 359 kB in 0s (1,372 kB/s)</span><br><span class="line">Selecting previously unselected package thin-provisioning-tools.</span><br><span class="line">(Reading database ... 71646 files and directories currently installed.)</span><br><span class="line">Preparing to unpack .../thin-provisioning-tools_0.7.4-2ubuntu3_amd64.deb ...</span><br><span class="line">Unpacking thin-provisioning-tools (0.7.4-2ubuntu3) ...</span><br><span class="line">Setting up thin-provisioning-tools (0.7.4-2ubuntu3) ...</span><br><span class="line">Processing triggers for man-db (2.8.3-2ubuntu0.1) ...</span><br></pre></td></tr></table></figure>
+
+<p>加速后硬盘分区情况</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"> lsblk</span><br><span class="line">NAME                            MAJ:MIN RM   SIZE RO TYPE MOUNTPOINT</span><br><span class="line">sda                               8:0    0 222.6G  0 disk</span><br><span class="line">├─sda1                            8:1    0   487M  0 part /boot</span><br><span class="line">├─sda2                            8:2    0     1K  0 part</span><br><span class="line">└─sda5                            8:5    0 222.1G  0 part</span><br><span class="line">  ├─systemvg-swaplv             253:0    0  15.3G  0 lvm  [SWAP]</span><br><span class="line">  └─systemvg-rootlv             253:1    0  30.5G  0 lvm  /</span><br><span class="line">sdb                               8:16   0 446.1G  0 disk</span><br><span class="line">└─sdb1                            8:17   0 446.1G  0 part</span><br><span class="line">  ├─infokistvg-cachelv_cdata    253:3    0 445.3G  0 lvm</span><br><span class="line">  │ └─infokistvg-infokistlv     253:2    0    51T  0 lvm  /infokist</span><br><span class="line">  └─infokistvg-cachelv_cmeta    253:4    0    48M  0 lvm</span><br><span class="line">    └─infokistvg-infokistlv     253:2    0    51T  0 lvm  /infokist</span><br><span class="line">sdc                               8:32   0    51T  0 disk</span><br><span class="line">└─sdc1                            8:33   0    51T  0 part</span><br><span class="line">  └─infokistvg-infokistlv_corig 253:5    0    51T  0 lvm</span><br><span class="line">    └─infokistvg-infokistlv     253:2    0    51T  0 lvm  /infokist</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<p>fio测试命令</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">fio -filename=<span class="regexp">/infokist/</span>test -direct=<span class="number">1</span> -iodepth <span class="number">1</span> -thread -rw=randrw -rwmixread=<span class="number">70</span> -ioengine=psync -bs=16k -size=2G -numjobs=<span class="number">30</span> -runtime=<span class="number">100</span> -group_reporting -name=mytest -ioscheduler=noop</span><br></pre></td></tr></table></figure>
+
+<p>加速前：写入为IOPS&#x3D;1113, BW&#x3D;17.4MiB&#x2F;s (18.2MB&#x2F;s)读取IOPS&#x3D;2593, BW&#x3D;40.5MiB&#x2F;s (42.5MB&#x2F;s)</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line">Jobs: 30 (f=30): [m(30)][100.0%][r=42.2MiB/s,w=17.5MiB/s][r=2697,w=1121 IOPS][eta 00m:00s]</span><br><span class="line">mytest: (groupid=0, jobs=30): err= 0: pid=5706: Tue Jul 12 14:42:43 2022</span><br><span class="line">   read: IOPS=2593, BW=40.5MiB/s (42.5MB/s)(4058MiB/100145msec)</span><br><span class="line">    clat (usec): min=30, max=964422, avg=11172.19, stdev=30577.80</span><br><span class="line">     lat (usec): min=30, max=964422, avg=11172.57, stdev=30577.80</span><br><span class="line">    clat percentiles (usec):</span><br><span class="line">     |  1.00th=[    44],  5.00th=[    48], 10.00th=[    51], 20.00th=[    64],</span><br><span class="line">     | 30.00th=[    82], 40.00th=[   239], 50.00th=[  1582], 60.00th=[  5014],</span><br><span class="line">     | 70.00th=[  8160], 80.00th=[ 13173], 90.00th=[ 25822], 95.00th=[ 46400],</span><br><span class="line">     | 99.00th=[149947], 99.50th=[208667], 99.90th=[367002], 99.95th=[446694],</span><br><span class="line">     | 99.99th=[583009]</span><br><span class="line">   bw (  KiB/s): min=   32, max= 3520, per=3.35%, avg=1389.86, stdev=585.58, samples=5983</span><br><span class="line">   iops        : min=    2, max=  220, avg=86.81, stdev=36.57, samples=5983</span><br><span class="line">  write: IOPS=1113, BW=17.4MiB/s (18.2MB/s)(1743MiB/100145msec)</span><br><span class="line">    clat (usec): min=31, max=820780, avg=877.49, stdev=11722.35</span><br><span class="line">     lat (usec): min=31, max=820782, avg=878.57, stdev=11722.35</span><br><span class="line">    clat percentiles (usec):</span><br><span class="line">     |  1.00th=[    40],  5.00th=[    46], 10.00th=[    48], 20.00th=[    51],</span><br><span class="line">     | 30.00th=[    55], 40.00th=[    60], 50.00th=[    67], 60.00th=[    78],</span><br><span class="line">     | 70.00th=[    83], 80.00th=[    89], 90.00th=[    98], 95.00th=[   113],</span><br><span class="line">     | 99.00th=[  4424], 99.50th=[ 50594], 99.90th=[189793], 99.95th=[242222],</span><br><span class="line">     | 99.99th=[404751]</span><br><span class="line">   bw (  KiB/s): min=   32, max= 2112, per=3.36%, avg=598.67, stdev=296.14, samples=5964</span><br><span class="line">   iops        : min=    2, max=  132, avg=37.40, stdev=18.49, samples=5964</span><br><span class="line">  lat (usec)   : 50=11.71%, 100=40.69%, 250=5.59%, 500=3.89%, 750=0.72%</span><br><span class="line">  lat (usec)   : 1000=0.70%</span><br><span class="line">  lat (msec)   : 2=2.16%, 4=4.19%, 10=12.87%, 20=7.95%, 50=6.21%</span><br><span class="line">  lat (msec)   : 100=1.94%, 250=1.14%, 500=0.22%, 750=0.02%, 1000=0.01%</span><br><span class="line">  cpu          : usr=0.10%, sys=0.41%, ctx=371339, majf=0, minf=1</span><br><span class="line">  IO depths    : 1=100.0%, 2=0.0%, 4=0.0%, 8=0.0%, 16=0.0%, 32=0.0%, &gt;=64=0.0%</span><br><span class="line">     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, &gt;=64=0.0%</span><br><span class="line">     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, &gt;=64=0.0%</span><br><span class="line">     issued rwt: total=259724,111528,0, short=0,0,0, dropped=0,0,0</span><br><span class="line">     latency   : target=0, window=0, percentile=100.00%, depth=1</span><br><span class="line"></span><br><span class="line">Run status group 0 (all jobs):</span><br><span class="line">   READ: bw=40.5MiB/s (42.5MB/s), 40.5MiB/s-40.5MiB/s (42.5MB/s-42.5MB/s), io=4058MiB (4255MB), run=100145-100145msec</span><br><span class="line">  WRITE: bw=17.4MiB/s (18.2MB/s), 17.4MiB/s-17.4MiB/s (18.2MB/s-18.2MB/s), io=1743MiB (1827MB), run=100145-100145msec</span><br><span class="line"></span><br><span class="line">Disk stats (read/write):</span><br><span class="line">    dm-2: ios=259677/111526, merge=0/0, ticks=2890872/95592, in_queue=2986464, util=99.96%, aggrios=259724/111539, aggrmerge=0/4, aggrticks=2895525/96105, aggrin_queue=2701848, aggrutil=99.95%</span><br><span class="line">  sdc: ios=259724/111539, merge=0/4, ticks=2895525/96105, in_queue=2701848, util=99.95%</span><br></pre></td></tr></table></figure>
+
+<p>加速后：写入为IOPS&#x3D;7190, BW&#x3D;112MiB&#x2F;s (118MB&#x2F;s)读取IOPS&#x3D;16.8k, BW&#x3D;262MiB&#x2F;s (275MB&#x2F;s)</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br></pre></td><td class="code"><pre><span class="line">Jobs: 30 (f=30): [m(30)][100.0%][r=268MiB/s,w=112MiB/s][r=17.2k,w=7146 IOPS][eta 00m:00s]</span><br><span class="line">mytest: (groupid=0, jobs=30): err= 0: pid=3066: Tue Jul 12 16:12:15 2022</span><br><span class="line">   read: IOPS=16.8k, BW=262MiB/s (275MB/s)(25.6GiB/100004msec)</span><br><span class="line">    clat (usec): min=32, max=31820, avg=1582.67, stdev=2412.38</span><br><span class="line">     lat (usec): min=32, max=31820, avg=1583.00, stdev=2412.40</span><br><span class="line">    clat percentiles (usec):</span><br><span class="line">     |  1.00th=[   69],  5.00th=[  139], 10.00th=[  223], 20.00th=[  343],</span><br><span class="line">     | 30.00th=[  404], 40.00th=[  465], 50.00th=[  578], 60.00th=[  799],</span><br><span class="line">     | 70.00th=[ 1123], 80.00th=[ 2180], 90.00th=[ 4621], 95.00th=[ 6915],</span><br><span class="line">     | 99.00th=[11600], 99.50th=[13304], 99.90th=[17433], 99.95th=[19268],</span><br><span class="line">     | 99.99th=[24249]</span><br><span class="line">   bw (  KiB/s): min= 3808, max=18917, per=3.34%, avg=8965.01, stdev=1356.18, samples=6000</span><br><span class="line">   iops        : min=  238, max= 1182, avg=560.18, stdev=84.78, samples=6000</span><br><span class="line">  write: IOPS=7190, BW=112MiB/s (118MB/s)(10.0GiB/100004msec)</span><br><span class="line">    clat (usec): min=32, max=254007, avg=464.10, stdev=934.21</span><br><span class="line">     lat (usec): min=33, max=254008, avg=464.91, stdev=934.22</span><br><span class="line">    clat percentiles (usec):</span><br><span class="line">     |  1.00th=[   61],  5.00th=[   94], 10.00th=[  126], 20.00th=[  188],</span><br><span class="line">     | 30.00th=[  245], 40.00th=[  289], 50.00th=[  322], 60.00th=[  355],</span><br><span class="line">     | 70.00th=[  400], 80.00th=[  486], 90.00th=[  799], 95.00th=[ 1680],</span><br><span class="line">     | 99.00th=[ 2835], 99.50th=[ 3195], 99.90th=[ 3785], 99.95th=[ 4113],</span><br><span class="line">     | 99.99th=[27132]</span><br><span class="line">   bw (  KiB/s): min= 1344, max= 9234, per=3.34%, avg=3839.05, stdev=682.06, samples=6000</span><br><span class="line">   iops        : min=   84, max=  577, avg=239.70, stdev=42.59, samples=6000</span><br><span class="line">  lat (usec)   : 50=0.24%, 100=3.48%, 250=13.81%, 500=37.75%, 750=11.74%</span><br><span class="line">  lat (usec)   : 1000=7.76%</span><br><span class="line">  lat (msec)   : 2=9.19%, 4=7.77%, 10=6.96%, 20=1.26%, 50=0.03%</span><br><span class="line">  lat (msec)   : 100=0.01%, 250=0.01%, 500=0.01%</span><br><span class="line">  cpu          : usr=0.55%, sys=3.20%, ctx=2401006, majf=0, minf=8723</span><br><span class="line">  IO depths    : 1=100.0%, 2=0.0%, 4=0.0%, 8=0.0%, 16=0.0%, 32=0.0%, &gt;=64=0.0%</span><br><span class="line">     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, &gt;=64=0.0%</span><br><span class="line">     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, &gt;=64=0.0%</span><br><span class="line">     issued rwt: total=1679208,719096,0, short=0,0,0, dropped=0,0,0</span><br><span class="line">     latency   : target=0, window=0, percentile=100.00%, depth=1</span><br><span class="line"></span><br><span class="line">Run status group 0 (all jobs):</span><br><span class="line">   READ: bw=262MiB/s (275MB/s), 262MiB/s-262MiB/s (275MB/s-275MB/s), io=25.6GiB (27.5GB), run=100004-100004msec</span><br><span class="line">  WRITE: bw=112MiB/s (118MB/s), 112MiB/s-112MiB/s (118MB/s-118MB/s), io=10.0GiB (11.8GB), run=100004-100004msec</span><br><span class="line"></span><br><span class="line">Disk stats (read/write):</span><br><span class="line">    dm-2: ios=1677579/718395, merge=0/0, ticks=2613348/313900, in_queue=2927248, util=99.98%, aggrios=577911/257879, aggrmerge=0/0, aggrticks=892072/133117, aggrin_queue=1025189, aggrutil=99.55%</span><br><span class="line">    dm-4: ios=0/6, merge=0/0, ticks=0/0, in_queue=0, util=0.00%, aggrios=1788208/719129, aggrmerge=7/8, aggrticks=2730949/307852, aggrin_queue=1142204, aggrutil=99.56%</span><br><span class="line">  sdb: ios=1788208/719129, merge=7/8, ticks=2730949/307852, in_queue=1142204, util=99.56%</span><br><span class="line">    dm-5: ios=23/54515, merge=0/0, ticks=24/97408, in_queue=97432, util=84.33%, aggrios=37/109023, aggrmerge=0/0, aggrticks=41/173601, aggrin_queue=131284, aggrutil=84.35%</span><br><span class="line">  sdc: ios=37/109023, merge=0/0, ticks=41/173601, in_queue=131284, util=84.35%</span><br><span class="line">  dm-3: ios=1733711/719117, merge=0/0, ticks=2676192/301944, in_queue=2978136, util=99.55%</span><br></pre></td></tr></table></figure>
+
+<p>系统盘为纯固态，读取速度为IOPS&#x3D;22.9k, BW&#x3D;358MiB&#x2F;s，写入速度为IOPS&#x3D;9832, BW&#x3D;154MiB&#x2F;s (161MB&#x2F;s)</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line"><span class="title class_">Jobs</span>: <span class="number">30</span> (f=<span class="number">30</span>): [<span class="title function_">m</span>(<span class="number">30</span>)][<span class="number">100.0</span>%][r=420MiB/s,w=180MiB/s][r=<span class="number">26.</span>9k,w=<span class="number">11.</span>5k <span class="variable constant_">IOPS</span>][eta 00<span class="attr">m</span>:00s]</span><br><span class="line"><span class="attr">mytest</span>: (groupid=<span class="number">0</span>, jobs=<span class="number">30</span>): err= <span class="number">0</span>: pid=<span class="number">2817</span>: <span class="title class_">Tue</span> <span class="title class_">Jul</span> <span class="number">12</span> <span class="number">16</span>:<span class="number">53</span>:<span class="number">23</span> <span class="number">2022</span></span><br><span class="line">   <span class="attr">read</span>: <span class="variable constant_">IOPS</span>=<span class="number">22.</span>9k, <span class="variable constant_">BW</span>=358MiB/<span class="title function_">s</span> (376MB/s)(<span class="number">35.</span>0GiB/100005msec)</span><br><span class="line">    <span class="title function_">clat</span> (usec): min=<span class="number">30</span>, max=<span class="number">79391</span>, avg=<span class="number">1185.06</span>, stdev=<span class="number">1989.84</span></span><br><span class="line">     <span class="title function_">lat</span> (usec): min=<span class="number">30</span>, max=<span class="number">79392</span>, avg=<span class="number">1185.23</span>, stdev=<span class="number">1989.86</span></span><br><span class="line">    clat <span class="title function_">percentiles</span> (usec):</span><br><span class="line">     |  <span class="number">1.</span>00th=[   <span class="number">57</span>],  <span class="number">5.</span>00th=[  <span class="number">101</span>], <span class="number">10.</span>00th=[  <span class="number">141</span>], <span class="number">20.</span>00th=[  <span class="number">202</span>],</span><br><span class="line">     | <span class="number">30.</span>00th=[  <span class="number">265</span>], <span class="number">40.</span>00th=[  <span class="number">363</span>], <span class="number">50.</span>00th=[  <span class="number">562</span>], <span class="number">60.</span>00th=[  <span class="number">857</span>],</span><br><span class="line">     | <span class="number">70.</span>00th=[ <span class="number">1270</span>], <span class="number">80.</span>00th=[ <span class="number">1991</span>], <span class="number">90.</span>00th=[ <span class="number">3228</span>], <span class="number">95.</span>00th=[ <span class="number">3949</span>],</span><br><span class="line">     | <span class="number">99.</span>00th=[ <span class="number">5211</span>], <span class="number">99.</span>50th=[ <span class="number">5997</span>], <span class="number">99.</span>90th=[<span class="number">28967</span>], <span class="number">99.</span>95th=[<span class="number">44827</span>],</span><br><span class="line">     | <span class="number">99.</span>99th=[<span class="number">58459</span>]</span><br><span class="line">   <span class="title function_">bw</span> (  <span class="title class_">KiB</span>/s): min=  <span class="number">448</span>, max=<span class="number">16929</span>, per=<span class="number">3.34</span>%, avg=<span class="number">12246.54</span>, stdev=<span class="number">2686.80</span>, samples=<span class="number">5995</span></span><br><span class="line">   iops        : min=   <span class="number">28</span>, max= <span class="number">1058</span>, avg=<span class="number">765.07</span>, stdev=<span class="number">167.85</span>, samples=<span class="number">5995</span></span><br><span class="line">  <span class="attr">write</span>: <span class="variable constant_">IOPS</span>=<span class="number">9832</span>, <span class="variable constant_">BW</span>=154MiB/<span class="title function_">s</span> (161MB/s)(<span class="number">15.</span>0GiB/100005msec)</span><br><span class="line">    <span class="title function_">clat</span> (usec): min=<span class="number">30</span>, max=<span class="number">17388</span>, avg=<span class="number">279.53</span>, stdev=<span class="number">294.06</span></span><br><span class="line">     <span class="title function_">lat</span> (usec): min=<span class="number">31</span>, max=<span class="number">17388</span>, avg=<span class="number">279.95</span>, stdev=<span class="number">294.12</span></span><br><span class="line">    clat <span class="title function_">percentiles</span> (usec):</span><br><span class="line">     |  <span class="number">1.</span>00th=[   <span class="number">50</span>],  <span class="number">5.</span>00th=[   <span class="number">73</span>], <span class="number">10.</span>00th=[   <span class="number">90</span>], <span class="number">20.</span>00th=[  <span class="number">118</span>],</span><br><span class="line">     | <span class="number">30.</span>00th=[  <span class="number">143</span>], <span class="number">40.</span>00th=[  <span class="number">165</span>], <span class="number">50.</span>00th=[  <span class="number">190</span>], <span class="number">60.</span>00th=[  <span class="number">219</span>],</span><br><span class="line">     | <span class="number">70.</span>00th=[  <span class="number">258</span>], <span class="number">80.</span>00th=[  <span class="number">330</span>], <span class="number">90.</span>00th=[  <span class="number">537</span>], <span class="number">95.</span>00th=[  <span class="number">996</span>],</span><br><span class="line">     | <span class="number">99.</span>00th=[ <span class="number">1582</span>], <span class="number">99.</span>50th=[ <span class="number">1844</span>], <span class="number">99.</span>90th=[ <span class="number">2040</span>], <span class="number">99.</span>95th=[ <span class="number">2089</span>],</span><br><span class="line">     | <span class="number">99.</span>99th=[ <span class="number">2245</span>]</span><br><span class="line">   <span class="title function_">bw</span> (  <span class="title class_">KiB</span>/s): min=   <span class="number">32</span>, max= <span class="number">8448</span>, per=<span class="number">3.34</span>%, avg=<span class="number">5249.73</span>, stdev=<span class="number">1228.72</span>, samples=<span class="number">5995</span></span><br><span class="line">   iops        : min=    <span class="number">2</span>, max=  <span class="number">528</span>, avg=<span class="number">327.73</span>, stdev=<span class="number">76.70</span>, samples=<span class="number">5995</span></span><br><span class="line">  <span class="title function_">lat</span> (usec)   : <span class="number">50</span>=<span class="number">0.76</span>%, <span class="number">100</span>=<span class="number">6.76</span>%, <span class="number">250</span>=<span class="number">32.58</span>%, <span class="number">500</span>=<span class="number">20.01</span>%, <span class="number">750</span>=<span class="number">7.75</span>%</span><br><span class="line">  <span class="title function_">lat</span> (usec)   : <span class="number">1000</span>=<span class="number">5.32</span>%</span><br><span class="line">  <span class="title function_">lat</span> (msec)   : <span class="number">2</span>=<span class="number">12.84</span>%, <span class="number">4</span>=<span class="number">10.75</span>%, <span class="number">10</span>=<span class="number">3.09</span>%, <span class="number">20</span>=<span class="number">0.04</span>%, <span class="number">50</span>=<span class="number">0.08</span>%</span><br><span class="line">  <span class="title function_">lat</span> (msec)   : <span class="number">100</span>=<span class="number">0.02</span>%</span><br><span class="line">  cpu          : usr=<span class="number">0.46</span>%, sys=<span class="number">1.93</span>%, ctx=<span class="number">3278659</span>, majf=<span class="number">0</span>, minf=<span class="number">4602</span></span><br><span class="line">  <span class="variable constant_">IO</span> depths    : <span class="number">1</span>=<span class="number">100.0</span>%, <span class="number">2</span>=<span class="number">0.0</span>%, <span class="number">4</span>=<span class="number">0.0</span>%, <span class="number">8</span>=<span class="number">0.0</span>%, <span class="number">16</span>=<span class="number">0.0</span>%, <span class="number">32</span>=<span class="number">0.0</span>%, &gt;=<span class="number">64</span>=<span class="number">0.0</span>%</span><br><span class="line">     submit    : <span class="number">0</span>=<span class="number">0.0</span>%, <span class="number">4</span>=<span class="number">100.0</span>%, <span class="number">8</span>=<span class="number">0.0</span>%, <span class="number">16</span>=<span class="number">0.0</span>%, <span class="number">32</span>=<span class="number">0.0</span>%, <span class="number">64</span>=<span class="number">0.0</span>%, &gt;=<span class="number">64</span>=<span class="number">0.0</span>%</span><br><span class="line">     complete  : <span class="number">0</span>=<span class="number">0.0</span>%, <span class="number">4</span>=<span class="number">100.0</span>%, <span class="number">8</span>=<span class="number">0.0</span>%, <span class="number">16</span>=<span class="number">0.0</span>%, <span class="number">32</span>=<span class="number">0.0</span>%, <span class="number">64</span>=<span class="number">0.0</span>%, &gt;=<span class="number">64</span>=<span class="number">0.0</span>%</span><br><span class="line">     issued <span class="attr">rwt</span>: total=<span class="number">2293915</span>,<span class="number">983331</span>,<span class="number">0</span>, short=<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>, dropped=<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span></span><br><span class="line">     latency   : target=<span class="number">0</span>, <span class="variable language_">window</span>=<span class="number">0</span>, percentile=<span class="number">100.00</span>%, depth=<span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="title class_">Run</span> status group <span class="number">0</span> (all jobs):</span><br><span class="line">   <span class="attr">READ</span>: bw=358MiB/<span class="title function_">s</span> (376MB/s), 358MiB/s-358MiB/<span class="title function_">s</span> (376MB/s-376MB/s), io=<span class="number">35.</span>0GiB (<span class="number">37.</span>6GB), run=<span class="number">100005</span>-100005msec</span><br><span class="line">  <span class="attr">WRITE</span>: bw=154MiB/<span class="title function_">s</span> (161MB/s), 154MiB/s-154MiB/<span class="title function_">s</span> (161MB/s-161MB/s), io=<span class="number">15.</span>0GiB (<span class="number">16.</span>1GB), run=<span class="number">100005</span>-100005msec</span><br><span class="line"></span><br><span class="line"><span class="title class_">Disk</span> <span class="title function_">stats</span> (read/write):</span><br><span class="line">    dm-<span class="number">1</span>: ios=<span class="number">2290781</span>/<span class="number">981975</span>, merge=<span class="number">0</span>/<span class="number">0</span>, ticks=<span class="number">2682844</span>/<span class="number">263744</span>, in_queue=<span class="number">2946588</span>, util=<span class="number">99.95</span>%, aggrios=<span class="number">2293909</span>/<span class="number">983345</span>, aggrmerge=<span class="number">4</span>/<span class="number">5</span>, aggrticks=<span class="number">2688800</span>/<span class="number">262927</span>, aggrin_queue=<span class="number">540280</span>, aggrutil=<span class="number">99.94</span>%</span><br><span class="line">  <span class="attr">sda</span>: ios=<span class="number">2293909</span>/<span class="number">983345</span>, merge=<span class="number">4</span>/<span class="number">5</span>, ticks=<span class="number">2688800</span>/<span class="number">262927</span>, in_queue=<span class="number">540280</span>, util=<span class="number">99.94</span>%</span><br></pre></td></tr></table></figure>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="followme">
+  <span>欢迎关注我的其它发布渠道</span>
+
+  <div class="social-list">
+
+      <div class="social-item">
+          <a target="_blank" class="social-link" href="/atom.xml">
+            <span class="icon">
+              <i class="fa fa-rss"></i>
+            </span>
+
+            <span class="label">RSS</span>
+          </a>
+      </div>
+  </div>
+</div>
+
+          <div class="post-tags">
+              <a href="/tags/fio/" rel="tag"># fio</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2022/12/03/Hello-World/" rel="prev" title="Hello World">
+                  <i class="fa fa-angle-left"></i> Hello World
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="beian"><a href="https://beian.miit.gov.cn/" rel="noopener" target="_blank">粤ICP备2022048799号 </a>
+  </div>
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2025</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">灰原键</span>
+  </div>
+<div class="busuanzi-count">
+    <span class="post-meta-item" id="busuanzi_container_site_uv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+  <a href="https://github.com/haibara-jian" class="github-corner" title="在 GitHub 上关注我" aria-label="在 GitHub 上关注我" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/assets/miku.model.json"},"log":false});</script></body>
+</html>

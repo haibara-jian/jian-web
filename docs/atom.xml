@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>鸟憨之家</title>
+  <icon>https://www.niaohan.top/icon.png</icon>
+  
+  <link href="https://www.niaohan.top/atom.xml" rel="self"/>
+  
+  <link href="https://www.niaohan.top/"/>
+  <updated>2023-04-04T12:37:04.716Z</updated>
+  <id>https://www.niaohan.top/</id>
+  
+  <author>
+    <name>灰原键</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>安装fio测速工具</title>
+    <link href="https://www.niaohan.top/2023/04/04/%E5%AE%89%E8%A3%85fio%E6%B5%8B%E9%80%9F%E5%B7%A5%E5%85%B7/"/>
+    <id>https://www.niaohan.top/2023/04/04/%E5%AE%89%E8%A3%85fio%E6%B5%8B%E9%80%9F%E5%B7%A5%E5%85%B7/</id>
+    <published>2023-04-04T12:37:04.716Z</published>
+    <updated>2023-04-04T12:37:04.716Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;安装fio测速工具&lt;/p&gt;
+&lt;figure class=&quot;highlight shell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span</summary>
+        
+      
+    
+    
+    
+    <category term="code" scheme="https://www.niaohan.top/categories/code/"/>
+    
+    
+    <category term="fio" scheme="https://www.niaohan.top/tags/fio/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://www.niaohan.top/2022/12/03/Hello-World/"/>
+    <id>https://www.niaohan.top/2022/12/03/Hello-World/</id>
+    <published>2022-12-03T15:09:54.552Z</published>
+    <updated>2022-06-15T15:58:19.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;一级标题&quot;&gt;&lt;a href=&quot;#一级标题&quot; class=&quot;headerlink&quot; title=&quot;一级标题&quot;&gt;&lt;/a&gt;一级标题&lt;/h1&gt;&lt;h2 id=&quot;二级标题&quot;&gt;&lt;a href=&quot;#二级标题&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="code" scheme="https://www.niaohan.top/categories/code/"/>
+    
+    
+    <category term="Markdown" scheme="https://www.niaohan.top/tags/Markdown/"/>
+    
+  </entry>
+  
+</feed>
